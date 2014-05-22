@@ -66,7 +66,7 @@ end
 class TestPlaylistBuilder < Test:Unit:TestCase
   # run before every method
   def setup
-    @db = DBI.connecT('DBI:mysql:playlists')
+    @db = DBI.connect('DBI:mysql:playlists')
     @pb = PlaylistBuilder.new(@db)
   end
 
